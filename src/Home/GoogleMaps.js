@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import {FaAngleDoubleDown} from 'react-icons/fa';
-import {Marker} from 'google-maps-react';
 
 class GoogleMaps extends Component {
     static defaultProps = {

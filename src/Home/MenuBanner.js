@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Boxin, FaBars} from 'react-icons/fa';
+import {Boxin} from 'react-icons/fa';
 import BannerImage from '../images/cover-round.jpg'
 import "./MenuBanner.css"
 
