@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import NavigationBar from "./Home/NavigationBar";
-import MenuBanner from "./Home/MenuBanner";
 import Home from "./Home/Home";
-import GoogleMaps from "./Home/GoogleMaps";
-import GalleryHome from "./Home/GalleryHome";
-import HomeGallery from "./Home/HomeGallery";
+import { Router, navigate } from '@reach/router';
+import Login from "./Login/Login";
 
 class App extends Component {
 
@@ -20,9 +16,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home user={this.state.user} />
-        {/*<MenuBanner/>*/}
+          <Router>
+              <Home path="/" user={this.state.user} />
+              <Login path="/login" />
+          </Router>
+
       </div>
+
+
     );
   }
 }

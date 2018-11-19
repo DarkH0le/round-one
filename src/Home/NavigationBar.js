@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Boxin } from 'react-icons/fa';
 import { Link } from '@reach/router';
-import MainImages from "../images/icon-round.png";
-
-import { StickyContainer, Sticky } from 'react-sticky';
-
 
 class NavigationBar extends Component {
     render() {
@@ -20,23 +16,23 @@ class NavigationBar extends Component {
                     </Link>
                     <div className="navbar-nav ml-auto">
                         {user && (
-                            <Link className="nav-item nav-link" to="/meetings">
-                                meetings
+                            <Link className="nav-item nav-link" to="/">
+                                Home
                             </Link>
                         )}
                         {!user && (
                             <Link className=" btn btn-success mr-2 font-weight-bold" to="/login">
-                                Log in
+                                Login
                             </Link>
                         )}
                         {!user && (
                             <Link className="nav-item nav-link btn btn-dark" to="/register">
-                                Register
+                                Registrase
                             </Link>
                         )}
                         {user && (
-                            <Link className=" nav-link font-weight-bold" to="/login">
-                                Log out
+                            <Link className=" nav-link font-weight-bold " to="/login">
+                                Registrarte
                             </Link>
                         )}
                     </div>

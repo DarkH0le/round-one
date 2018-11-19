@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import NavigationBar from "./NavigationBar";
 import MenuBanner from "./MenuBanner";
 import GoogleMaps from "./GoogleMaps";
-import HomeGallery from "../Home/HomeGallery";
+import HomeGallery from "./HomeGallery";
 
 class Home extends Component {
+
+    constructor(props) {
+        super(props);
+
+    }
+
     render() {
         const { user } = this.props;
 
@@ -18,10 +24,12 @@ class Home extends Component {
                 <NavigationBar user={this.props}/>
                 <MenuBanner/>
                 <div style={{ height: '100vh', width: '100%' , padding: "4px"}}><GoogleMaps/></div>
-                <div style={{ height: '600px', width: '100%' , padding: "4px"}}><HomeGallery/></div>
+                {/*<div><MainGallery/></div>*/}
+                <HomeGallery style={{ height: '100vh', width: '100%' , padding: "4px"}}/>
 
             </div>
         );
     }
 }
+
 export default Home;
