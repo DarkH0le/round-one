@@ -10,7 +10,9 @@
     "@reach/router": "latest",
     "google-map-react": "latest",
     "google-maps-react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "bootstrap": "^4.1.3",
+    "react-scripts": "2.1.1",
   },
   "scripts": {
     "start": "react-scripts start",
